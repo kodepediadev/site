@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodepedia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --kodepedia-orange: #ff7900;
+      --kodepedia-orange-dark: #d45c00;
+      --kodepedia-bg: #fff7f0;
+      --kodepedia-text: #2e3a59;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--kodepedia-bg);
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .site-identity {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: var(--kodepedia-orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(255,121,0,0.12);
+    }
+    .logo-text {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--kodepedia-orange-dark);
+      letter-spacing: 0.08em;
+      font-family: inherit;
+      text-shadow: 0 1px 6px rgba(255,121,0,0.08);
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--kodepedia-orange-dark);
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    p {
+      font-size: 1.15rem;
+      color: #444;
+      line-height: 1.7;
+      text-align: center;
+      margin: 0;
+    }
+    .cta-button {
+      padding: 0.85rem 2rem;
+      background: linear-gradient(90deg, var(--kodepedia-orange) 0%, var(--kodepedia-orange-dark) 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(255, 121, 0, 0.13);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cta-button:hover {
+      background: linear-gradient(90deg, var(--kodepedia-orange-dark) 0%, var(--kodepedia-orange) 100%);
+    }
+    .image-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-section img {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 18px rgba(255,121,0,0.08);
+      object-fit: cover;
+      border: 2px solid var(--kodepedia-orange);
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 1.2rem 0.8rem;
+        gap: 1.2rem;
+        margin: 1.5rem 0.5rem;
+      }
+      .site-identity {
+        gap: 0.5rem;
+      }
+      .logo {
+        width: 36px;
+        height: 36px;
+      }
+      .logo-text {
+        font-size: 1.1rem;
+      }
+      h1 {
+        font-size: 1.35rem;
+      }
+      .cta-button {
+        padding: 0.65rem 1.2rem;
+        font-size: 0.98rem;
+      }
+      .image-section img {
+        max-width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="site-identity">
+      <span class="logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="12" fill="#fff" />
+          <text x="14" y="20" text-anchor="middle" font-size="13" font-family="Inter, Arial, sans-serif" fill="#ff7900" font-weight="bold">K</text>
+        </svg>
+      </span>
+      <span class="logo-text">Kodepedia</span>
+    </div>
+    <h1>Kodepedia</h1>
+    <div class="image-section">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Kodepedia Illustration">
+    </div>
+    <p>
+      Welcome to <b style="color:var(--kodepedia-orange-dark)">Kodepedia</b>—your elegant, responsive single-page experience.
+      Designed for clarity and style, with a vibrant orange identity. Perfect for portfolios, landing pages, or personal projects.
+    </p>
+    <button class="cta-button">Get Started</button>
+  </div>
+</body>
+</html>
